@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "montserrat";
+    font-family: "montserratbold";
+    src: url("../fonts/Montserrat-Bold.otf");
+}
+
+/******************PC and LAPTOP (default)********************/
+
+/********************GENERAL************************/
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    height: auto;
+    left: 100px;
+    top: 171px;
+}
+.leaf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    min-height: 800px;
+    height: fit-content;
+    margin-top: -175px;
+    margin-right: 4%;
+    margin-left: 0;
+}
+/********************HEADER************************/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 68px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.header-menu {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 25%;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.navlink {
+    height: fit-content;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: none;
+    /* or 34px */
+    width: fit-content;
+    text-align: right;
+    color: #ff6060;
+}
+.active.navlink {
+    text-decoration: underline;
+}
+
+/**************** BODY ***************/
+.main {
+    width: 100%;
+    height: fit-content;
+    left: 100px;
+    top: 171px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-height: 209px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: black;
+    padding: 40px 0px 10px 0px;
+}
+
+.footer img {
+    filter: opacity(100%) brightness(1000%);
+    width: 100px;
+    vertical-align: middle;
+}
+
+.footer p {
+    color: white;
+    font-size: 24px;
+}
+
+/*************************************** TABLETTE ***************************************************/
+@media screen and (max-width: 1023px) {
+    /********************GENERAL************************/
+    body {
+        left: 5%;
+    }
+    .leaf {
+        width: 100%;
+    }
+    /********************HEADER************************/
+    .header {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    .header img {
+        width: auto;
+        height: 60%;
+    }
+
+    .header-menu {
+        width: 47%;
+    }
+
+    .navlink {
+        font-size: 24px;
+    }
+
+}
+/*************************************Mobile phones*********************************************/
+@media screen and (max-width: 599px) {
+    body {
+        left: 5%;
+        top: 120px;
+    }
+
+    .leaf {
+        max-width: 100%;
+        height: fit-content;
+        margin: 0%;
+    }
+/********************HEADER************************/
+    .header {
+        margin-top: -110px;
+        margin-bottom: 0px;
+    }
+
+    .header img {
+        width: 30%;
+        height: 48%;
+        margin-top: 20px;
+    }
+
+    .header-menu {
+        width: 50%;
+        column-gap: 15%;
+    }
+
+
+    .navlink {
+        font-size: 12px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-height: 100px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        background-color: black;
+        padding: 30px 0px 10px 0px;
+    }
+
+    .footer img {
+        filter: opacity(100%) brightness(1000%);
+        width: 100px;
+        vertical-align: middle;
+    }
+
+    .footer p {
+        color: white;
+        font-size: 14px;
+    }
+}

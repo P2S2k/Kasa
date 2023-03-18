@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/Montserrat-Regular.otf");
+}
+/*****************************PC et LAPTOP************************/
+.section {
+    display: flex;
+    width: 100%;
+    height: 223px;
+    position: relative;
+    text-align: center;
+    background-color: black;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+.section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    opacity: 60%;
+}
+.slogan {
+    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+h1 {
+    line-height: 250%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: #ffffff;
+}
+/********************* BODY Sticker *********************/
+.sticker-gallery {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+    column-gap: 2%;
+    padding: 3%;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+}
+.sticker {
+    position: relative;
+    align-items: center;
+    max-width: 30%;
+    height: 340px;
+    border-radius: 10px;
+}
+.sticker-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: white;
+}
+.sticker-pic {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/*************************************** TABLETTE ***************************************************/
+@media screen and (max-width: 1023px) {
+    .section {
+        height: 180px;
+        justify-content: space-around;
+    }
+    .slogan {
+        width: fit-content;
+        margin-top: 50px;
+    }
+    h1 {
+        width: 100%;
+        height: 70px;
+        font-size: 36px;
+    }
+    /********************* BODY Sticker *********************/
+    .sticker-gallery {
+        column-gap: 1%;
+    }
+    .sticker {
+        max-width: 45%;
+        min-width: 40%;
+        height: 220px;
+    }
+    .sticker-title {
+        font-size: 16px;
+    }
+}
+/*************************************MOBILE*********************************************/
+@media screen and (max-width: 599px) {
+    .section {
+        height: 100px;
+        margin-bottom: 0px;
+    }
+    .slogan {
+        height: 100%;
+        margin-top: 20px;
+        vertical-align: initial;
+        text-align: left;
+    }
+    h1 {
+        position: absolute;
+        max-width: 68%;
+        margin-left: 10%;
+        line-height: initial;
+        font-size: 24px;
+    }
+/********************* BODY Sticker *********************/
+.sticker-gallery {
+        width: 95%;
+        flex-direction: column;
+        justify-content: initial;
+        column-gap: 0%;
+        margin-top: 10px;
+        margin-left: -3px;
+        background-color: white;
+    }
+    .sticker {
+        min-width: 100%;
+        height: 255px;
+    }
+}

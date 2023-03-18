@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/Montserrat-Regular.otf");
+    font-family: "montserratbold";
+    src: url("../fonts/Montserrat-Bold.otf");
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 2000px) {
+   
+}
+/*************************************** TABLETTE ***************************************************/
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    
+}
+/*************************************Mobile phones*********************************************/
+@media screen and (max-width: 599px) {
+   
+}

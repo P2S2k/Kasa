@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/Montserrat-Regular.otf");
+    font-family: "montserratbold";
+    src: url("../fonts/Montserrat-Bold.otf");
+}
+
+
+
+    .bodyerror {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 700px;
+        font-family: "montserrat";
+        color: #ff6060;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .cat100cat {
+        margin: 0;
+        font-family: "montserratbold";
+        font-size: 250px;
+        font-weight: bolder;
+        width: fit-content;
+        height: fit-content;
+    }
+    .oups {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        font-size: 36px;
+        margin: 0;
+    }
+    .error-nav {
+        font-family: "montserrat";
+        color: inherit;
+        font-size: 18px;
+    }
+
+/*************************************** TABLETTE ***************************************************/
+@media screen and (max-width: 1023px) {
+    .bodyerror {
+        height: 600px;
+    }
+    .cat100cat {
+        font-size: 200px;
+    }
+    .oups {
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 30px;
+    }
+    .error-nav {
+        font-family: "montserrat";
+        color: inherit;
+        font-size: 18px;
+    }
+}
+/*************************************Mobile phones*********************************************/
+@media screen and (max-width: 599px) {
+    .bodyerror {
+        height: 500px;
+    }
+    .cat100cat {
+        font-size: 150px;
+    }
+    .oups {
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 18px;
+    }
+    .error-nav {
+        font-size: 14px;
+    }
+}
