@@ -1,11 +1,10 @@
-import Equipments from "./Equipments"
-import Description from "./Description"
+import Generique from "../Generique"
 
 function Descrequip({appart}) {
     return (
         <div className="descrequip">
-            <Description description={appart.description} />
-            <Equipments equipments={appart.equipments} />
+            <Generique title="Description" content={appart.description}/>
+            <Generique title="Equipements" content={appart.equipments} />
         </div>
     )
 }

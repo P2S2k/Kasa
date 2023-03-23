@@ -7,7 +7,7 @@ function Locdetails({appart}) {
             <div className="details">
                 <div className="leftdetails">
                     <div className="title">{appart.title}</div>
-                    <div className="location">{appart.location} </div>
+                    <div className="location">{appart.location}</div>
                     <div className="tags"><Tags tags={appart.tags} /></div>
                 </div>
                 <div className="rightdetails">

@@ -1,12 +1,19 @@
+import "../../../utils/style/main.css"
 import "../../../utils/style/appart.css"
+import { Apparts } from "../../../datas/Apparts"
+import { useParams } from "react-router-dom"
 import { useState } from "react"
 import downarrow from "../../../assets/downarrow.png"
 
-function Description({description}) {
+function Description() {
     const arrow = <img src={downarrow} alt="Descritpion detail" />
-    const [classname, setClassname] = useState("closed")
+    const { id } = useParams()
+    const [appart] = Apparts.filter((appart) => appart.id === id)
+    const description = appart.description
+    const [classname, setClassname] = useState("desclosed")
     return (
         <div className="desequip">
+            
             <div className="barretext">
                 <span className="text">Description</span>
             </div>
@@ -16,7 +23,7 @@ function Description({description}) {
                 className="arrow"
                 onClick={() =>
                     setClassname(
-                        classname === "open" ? "closed" : "open"
+                        classname === "desopen" ? "desclosed" : "desopen"
                     )
                 }
             >

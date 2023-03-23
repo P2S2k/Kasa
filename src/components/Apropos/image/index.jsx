@@ -1,12 +1,12 @@
 
 import "../../../utils/style/accueil.css"
-import kalen from "../../../assets/kalen.png"
+import mountain from "../../../assets/mountain.png"
 
 function Apropospic() {
     return (
             
                 <div className="apimage">
-                    <img src={kalen} alt="la côte" />
+                    <img src={mountain} alt="Paysage de montagnes" />
                 </div>
     )
 }

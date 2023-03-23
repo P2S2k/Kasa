@@ -6,17 +6,17 @@ import { NavLink } from "react-router-dom"
 
 function Header() {
     return (
-        <div className="header">
-            <img src={logo} alt="kasa" />
-            <nav className="header-menu">
-                <NavLink className="navlink" to="/">
-                    Accueil
-                </NavLink>
-                <NavLink className="navlink" to="/Apropos">
-                    A propos
-                </NavLink>
-            </nav>
-        </div>
+            <div className="header">
+                <img src={logo} alt="kasa" />
+                <nav className="header-menu">
+                    <NavLink className="navlink" to="/">
+                        Accueil
+                    </NavLink>
+                    <NavLink className="navlink" to="/Apropos">
+                        A propos
+                    </NavLink>
+                </nav>
+            </div>
     )
 }
 

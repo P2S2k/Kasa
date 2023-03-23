@@ -6,17 +6,23 @@ import Home from "./pages/Home/index"
 import Apropos from "./pages/Apropos/index"
 import Error from "./pages/Error/index"
 import Appart from "./pages/Appart/index"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
     <React.StrictMode>
         <Router>
+            <div className="leaf">
+            <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Apropos" element={<Apropos />} />
                 <Route path="/Appart/:id" element={<Appart />} />
                 <Route path="*" element={<Error />} />
             </Routes>
+            <Footer />
+            </div>
         </Router>
     </React.StrictMode>
 )

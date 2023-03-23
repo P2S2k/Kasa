@@ -28,18 +28,18 @@ function Locpictures({ appart }) {
             <div className="pageappart">
                 <div className="photostick">
                     <button
-                        className="right"
+                        className="picright"
                         onClick={() => setCount((count) => count + 1)}
                     >
-                        <img className="arrowright" src={arrowright} alt="" />
+                        <img className="picarrowright" src={arrowright} alt="" />
                     </button>
 
                     <button
-                        className="left"
+                        className="picleft"
                         onClick={() => setCount((count) => count - 1)}
                     >
                         <img
-                            className="arrowleft"
+                            className="picarrowleft"
                             src={arrowleft}
                             alt="previous pic"
                         />

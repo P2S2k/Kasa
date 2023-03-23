@@ -1,8 +1,6 @@
 import "../../utils/style/main.css"
 import { useParams } from "react-router-dom"
 import { Apparts } from "../../datas/Apparts"
-import Header from "../../components/Header"
-import Footer from "../../components/Footer"
 import Locpictures from "../../components/Locpictures"
 import Locinfos from "../../components/Locinfos"
 import Descrequip from "../../components/Descrequip"
@@ -18,12 +16,12 @@ function Appart() {
         <Link rel="stylesheet" to="../Error" />
     } else {
         return (
-            <div className="leaf">
-                <Header></Header>
+            <div>
                 <Locpictures appart={appart} />
                 <Locinfos appart={appart} />
+                <div className="desequip">
                 <Descrequip appart={appart} />
-                <Footer></Footer>
+                </div>
             </div>
         )
     }
