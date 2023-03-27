@@ -6,11 +6,12 @@
     margin-bottom: 10px;
 }
 .barretext {
-    height: 50px;
+    height: 43px;
     display: flex;
+    position: sticky;
     width: 100%;
     flex-wrap: nowrap;
-    padding: 0 0 10px 0;
+    padding: 7px 0 0px 0;
     background-color: #ff6060;
     color: white;
     border-radius: 5px;
@@ -21,15 +22,11 @@
     padding: 5px 0px 0px 15px;
 }
 
-button {
-    background-color: #ff6060;
-    border: 0;
-}
 .arrow {
-    width: 8%;
-    transform: (translateX(-50%));
-    right: 10%;
-    margin-top: 6px;
+    background-color: transparent;
+    border: 0;
+    right: 1%;
+    margin-top: 5px;
     width: 45px;
     height: 30px;
     z-index: 10;
@@ -37,12 +34,12 @@ button {
 .arrow :hover {
     cursor: pointer;
 }
-.closed {
+.closed .content {
     width: 100%;
     height: 0px;
     overflow: hidden;
 }
-.open {
+.open .content {
     width: 100%;
     height: fit-content;
     background-color: #f7f7f7;
@@ -56,41 +53,44 @@ button {
 .open li {
     list-style: none;
 }
- .open + .arrow  {
-    margin-top: 4px;
+.open .arrow {
+    margin-top: 2px;
     transform: rotate(180deg);
 }
 
 /*************************************** TABLETTE ***************************************************/
 @media screen and (max-width: 1023px) {
-
     .barretext {
+        height: 30px;
         padding: 0 0 6px 0;
         background-color: #ff6060;
     }
+    .text {
+        margin-top: 3px;
+    }
     .arrow {
-        padding-top: 0px;
-        right: 8%;
+        position: relative;
+        padding-top: 0;
+        right: 2%;
     }
-    .open + .arrow {
-        margin-top: 0px;
+    .open .arrow {
+        margin-top: 1px;
     }
-    
 }
 /*************************************Mobile phones*********************************************/
 @media screen and (max-width: 599px) {
-    
-
     .barretext {
         font-size: 13px;
-        height: 30px;
-        padding: 0 0 0px 0;
+        height: 28px;
+        padding: 0 0 0 px;
     }
 
     .arrow {
-        width: 24px;
-        max-height: 16px;
-        padding-top: 0px;
+        transform: initial;
+        right: -38%;
+        width: 26px;
+        height: 12px;
+        margin-top: 7px;
     }
 
     .arrow img {
@@ -98,9 +98,9 @@ button {
         height: 100%;
     }
 
-    .arrow +.open {
-        margin-top: 0px;
-        transform: rotate(180deg) translateY(-45%);
+    .open .arrow {
+        transform: rotate(180deg);
+        margin-top: 10px;
     }
 
     .open {
@@ -108,5 +108,16 @@ button {
         border-radius: 5px;
         line-height: 17px;
         margin-bottom: 0px;
+    }
+    .open .content {
+        width: 100%;
+        height: fit-content;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        padding: 20px 5px 20px 5px;
+        box-sizing: border-box;
+        z-index: 1;
+        line-height: 160%;
+        margin-top: -9px;
     }
 }

@@ -14,7 +14,6 @@ body {
     position: absolute;
     height: auto;
     left: 100px;
-    top: 171px;
 }
 .leaf {
     display: flex;
@@ -22,8 +21,7 @@ body {
     max-width: 100%;
     min-height: 800px;
     height: fit-content;
-    margin-top: -175px;
-    margin-right: 4%;
+    margin-right: 6%;
     margin-left: 0;
 }
 /********************HEADER************************/
@@ -86,7 +84,6 @@ body {
 .footer img {
     filter: opacity(100%) brightness(1000%);
     width: 100px;
-    vertical-align: middle;
 }
 
 .footer p {
@@ -128,24 +125,22 @@ body {
 @media screen and (max-width: 599px) {
     body {
         left: 5%;
-        top: 120px;
     }
 
     .leaf {
         max-width: 100%;
         height: fit-content;
-        margin: 0%;
+        margin-top: -20px;
     }
 /********************HEADER************************/
     .header {
-        margin-top: -110px;
         margin-bottom: 10px;
     }
 
     .header img {
         width: 30%;
         height: 48%;
-        margin-top: 20px;
+        margin-top: 12px;
     }
 
     .header-menu {

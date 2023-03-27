@@ -36,12 +36,12 @@
 }
 
 .picright {
-    transform: translateX(-50%);
-    right: 5%;
+    transform: translateX(-100%);
+    right: 3%;
 }
 .picleft {
     transform: translateX(-50%);
-    left: 5%;
+    left: 3%;
 }
 
 .picarrowleft {
@@ -164,20 +164,35 @@
     color: #ff6060;
 }
 
-
+.barresize {
+    width: 50%;
+}
 
 /*************************************** TABLETTE ***************************************************/
 @media screen and (max-width: 1023px) {
+    /*****************   GLOBAL   *****************/
+    .pageappart {
+        margin-top: 0px;
+    }
     /*****************   PHOTOS APPART   *****************/
     .photostick {
         height: 380px;
     }
-    button {
-        width: 40px;
-        height: 70px;
+    .photostick button {
+        position: absolute;
+        width: 35px;
+        height: 60px;
+        border: 0;
+        opacity: 100%;
+        background-color: transparent;
     }
-    .right {
-        margin-left: 92%;
+
+    .picright {
+        transform: translateX(0%);
+        right: 2%;
+    }
+    .picleft {
+        left: 5%;
     }
     /*****************   DETAILS SYNTHETIQUES   *****************/
     .details {
@@ -191,7 +206,7 @@
     }
     .title {
         min-width: 100%;
-        font-size: 24px;
+        font-size: 28px;
     }
     .tags {
         padding-top: 10px;
@@ -200,7 +215,7 @@
         border-radius: 12px;
     }
     .rightdetails {
-        margin-top: 50px;
+        margin-top: 30px;
         min-height: 60px;
         width: 100%;
         flex-direction: row-reverse;
@@ -212,12 +227,12 @@
     }
     .hostname {
         max-width: 70px;
-        font-size: 14px;
+        font-size: 18px;
         text-align: right;
         margin-top: 8px;
     }
     .hostpic {
-        width: 50px;
+        width: 60px;
     }
     .rating {
         width: fit-content;
@@ -227,33 +242,34 @@
         margin-bottom: auto;
     }
     .rats img {
-        height: 22px;
+        height: 26px;
     }
     /*****************   DESCRIPTION & EQUIPEMENTS   *****************/
     .descrequip {
-        height: 280px;
+        min-height: 150px;
+        height: fit-content;
         margin-top: 20px;
-        font-size: 15px;
+        font-size: 18px;
     }
-    .right {
-        transform: translateX(0%);
-        right: 3%;
-    }
-   
 }
 /*************************************Mobile phones*********************************************/
 @media screen and (max-width: 599px) {
+    .pageappart {
+        width: 100%;
+        height: fit-content;
+        margin-top: 0px;
+    }
     /*****************   PHOTOS APPART   *****************/
     .photostick {
         height: 255px;
-        margin-top: 20px;
+        margin-top: 0px;
+    }
+    .photostick button {
+        width: 20px;
+        height: 25px;
     }
     .images {
         border-radius: 10px;
-    }
-    button {
-        width: 18px;
-        height: 20px;
     }
     .right {
         transform: translateX(0%);
@@ -329,30 +345,18 @@
     .descrequip {
         flex-direction: column;
         row-gap: 20px;
-        max-height: 450px;
+        min-height: 120px;
         height: fit-content;
         margin-top: -5px;
         margin-bottom: 25px;
         font-size: 12px;
     }
-    .desequip {
+    .barresize {
+        margin-top: 10px;
         width: 100%;
     }
     .text {
         width: 50%;
         padding: 5px 0px 0px 5px;
-    }
-    .arrow {
-        margin-left: 88%;
-        width: 30px;
-        height: 25px;
-    }
-    .open {
-        height: fit-content;
-        padding: 20px 5px 20px 5px;
-        line-height: 142%;
-    }
-    .open + .arrow {
-        margin-top: -1px;
     }
 }

@@ -52,16 +52,15 @@ h1 {
 }
 .sticker {
     position: relative;
-    align-items: center;
     max-width: 30%;
     height: 340px;
     border-radius: 10px;
 }
 .sticker-title {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
-    width: calc(100% - 20px);
+    width: calc(85% - 20px);
     padding: 10px;
     font-family: "Montserrat";
     font-style: normal;
@@ -80,6 +79,7 @@ h1 {
     object-fit: cover;
     border-radius: 10px;
 }
+
 /*************************************** TABLETTE ***************************************************/
 @media screen and (max-width: 1023px) {
     .section {

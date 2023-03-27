@@ -19,9 +19,7 @@ function Appart() {
             <div>
                 <Locpictures appart={appart} />
                 <Locinfos appart={appart} />
-                <div className="desequip">
                 <Descrequip appart={appart} />
-                </div>
             </div>
         )
     }
