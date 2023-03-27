@@ -1,3 +1,4 @@
+import "../../utils/style/main.css"
 import "../../utils/style/apropos.css"
 import Apropospic from "./image"
 import { Aprop } from "../../datas/Aprop"

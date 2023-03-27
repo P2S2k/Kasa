@@ -1,4 +1,3 @@
-import "../../utils/style/main.css"
 import { useParams } from "react-router-dom"
 import { Apparts } from "../../datas/Apparts"
 import Locpictures from "../../components/Locpictures"
