@@ -25,7 +25,6 @@
     opacity: 100%;
     border-radius: 25px;
 }
-
 .photostick button {
     position: absolute;
     width: 47px;
@@ -34,16 +33,12 @@
     opacity: 100%;
     background-color: transparent;
 }
-
 .picright {
-    transform: translateX(-100%);
-    right: 3%;
+    right: 7%;
 }
 .picleft {
-    transform: translateX(-50%);
-    left: 3%;
+    left: 1%;
 }
-
 .picarrowleft {
     width: 100%;
     height: 100%;
@@ -101,8 +96,6 @@
 }
 .tag {
     font-size: 14px;
-    width: fit-content;
-    height: fit-content;
     color: white;
     background-color: #ff6060;
     border-radius: 10px;
@@ -149,6 +142,7 @@
 .rats img {
     height: 27px;
 }
+
 /*****************   DESCRIPTION & EQUIPEMENTS   *****************/
 
 .descrequip {
@@ -163,7 +157,6 @@
     font-size: 18px;
     color: #ff6060;
 }
-
 .barresize {
     width: 50%;
 }
@@ -186,15 +179,15 @@
         opacity: 100%;
         background-color: transparent;
     }
-
     .picright {
-        transform: translateX(0%);
         right: 2%;
     }
     .picleft {
-        left: 5%;
+        left: 3%;
     }
+
     /*****************   DETAILS SYNTHETIQUES   *****************/
+    
     .details {
         flex-direction: column;
     }
@@ -244,7 +237,9 @@
     .rats img {
         height: 26px;
     }
+
     /*****************   DESCRIPTION & EQUIPEMENTS   *****************/
+    
     .descrequip {
         min-height: 150px;
         height: fit-content;
@@ -252,6 +247,7 @@
         font-size: 18px;
     }
 }
+
 /*************************************Mobile phones*********************************************/
 @media screen and (max-width: 599px) {
     .pageappart {
@@ -267,6 +263,12 @@
     .photostick button {
         width: 20px;
         height: 25px;
+    }
+    .picright {
+        right: 2%;
+    }
+    .picleft {
+        left: 2%;
     }
     .images {
         border-radius: 10px;

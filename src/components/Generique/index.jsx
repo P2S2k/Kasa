@@ -7,15 +7,17 @@ function Generique({ title, content }) {
     const [classname, setClassname] = useState("closed")
 
     return (
-        <div
-            className={classname}
-            onClick={() =>
-                setClassname(classname === "open" ? "closed" : "open")
-            }
-        >
+        <div className={classname}>
             <div className="barretext">
                 <span className="text">{title}</span>
-                <button className="arrow">{arrow}</button>
+                <button
+                    onClick={() =>
+                        setClassname(classname === "open" ? "closed" : "open")
+                    }
+                    className="arrow"
+                >
+                    {arrow}
+                </button>
             </div>
             <div className="content">
                 {Array.isArray(content)

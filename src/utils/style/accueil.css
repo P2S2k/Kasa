@@ -26,7 +26,6 @@
     position: absolute;
     width: 100%;
     height: fit-content;
-    align-items: center;
 }
 h1 {
     line-height: 250%;
@@ -60,7 +59,7 @@ h1 {
     position: absolute;
     bottom: 10px;
     left: 0;
-    width: calc(85% - 20px);
+    width: calc(90% - 20px);
     padding: 10px;
     font-family: "Montserrat";
     font-style: normal;
@@ -70,10 +69,6 @@ h1 {
     color: white;
 }
 .sticker-pic {
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
     max-width: 100%;
     height: 100%;
     object-fit: cover;
@@ -97,6 +92,7 @@ h1 {
         font-size: 36px;
     }
     /********************* BODY Sticker *********************/
+    
     .sticker-gallery {
         column-gap: 1%;
     }
@@ -129,8 +125,8 @@ h1 {
         line-height: initial;
         font-size: 24px;
     }
-/********************* BODY Sticker *********************/
-.sticker-gallery {
+    /********************* BODY Sticker *********************/
+    .sticker-gallery {
         width: 95%;
         flex-direction: column;
         justify-content: initial;

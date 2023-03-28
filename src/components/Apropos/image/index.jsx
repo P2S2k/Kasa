@@ -1,5 +1,4 @@
-
-import "../../../utils/style/accueil.css"
+import "../../../utils/style/apropos.css"
 import mountain from "../../../assets/mountain.png"
 
 function Apropospic() {

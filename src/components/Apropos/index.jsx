@@ -1,4 +1,3 @@
-import "../../utils/style/main.css"
 import "../../utils/style/apropos.css"
 import Apropospic from "./image"
 import { Aprop } from "../../datas/Aprop"
@@ -10,7 +9,7 @@ function Propos(aprop) {
             <Apropospic />
             <div className="propos">
                 {Aprop.map((aprop) =>
-                <Generique title = {aprop.name} content = {aprop.title} />)}
+                <Generique key={aprop.name} title = {aprop.name} content = {aprop.content} />)}
             </div>
         </div>
     )
