@@ -1,13 +1,13 @@
-import Generique from "../Generique"
+import Collapse from "../Collapse"
 
 function Descrequip({ appart }) {
     return (
         <div className="descrequip">
             <div className="barresize">
-                <Generique title="Description" content={appart.description} />
+                <Collapse title="Description" content={appart.description} />
             </div>
             <div className="barresize">
-                <Generique title="Equipements" content={appart.equipments} />
+                <Collapse title="Equipements" content={appart.equipments} />
             </div>
         </div>
     )

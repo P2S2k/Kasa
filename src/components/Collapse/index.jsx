@@ -1,27 +1,25 @@
 import { useState } from "react"
 import downarrow from "../../assets/downarrow.png"
-import "../../utils/style/apropos.css"
+import "../../utils/style/collapse.css"
 
-function Generique({ title, content }) {
+function Collapse({ title, content }) {
     const arrow = <img src={downarrow} alt="detail" />
     const [classname, setClassname] = useState("closed")
 
     return (
-        <div className="engagements">
+        <div className={classname}>
             <div className="barretext">
                 <span className="text">{title}</span>
-
                 <button
-                    className="arrow"
                     onClick={() =>
                         setClassname(classname === "open" ? "closed" : "open")
                     }
+                    className="arrow"
                 >
                     {arrow}
                 </button>
             </div>
-
-            <div className={classname}>
+            <div className="content">
                 {Array.isArray(content)
                     ? content.map((equip) => <li key={equip}>{equip}</li>)
                     : content}
@@ -30,4 +28,4 @@ function Generique({ title, content }) {
     )
 }
 
-export default Generique
+export default Collapse
