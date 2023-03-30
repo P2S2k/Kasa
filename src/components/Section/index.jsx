@@ -1,15 +1,9 @@
-import "../../utils/style/main.css"
-import "../../utils/style/accueil.css"
 import coast from "../../assets/coast.png"
+import Banner from "../Banner"
 
 function Section() {
-    return (
-            
-                <div className="section">
-                    <img src={coast} alt="la côte" />
-                    <h1 className="slogan">Chez vous, partout et ailleurs</h1>
-                </div>
-    )
+    const slogan = "Chez vous, partout et ailleurs"
+    return <Banner bannerpic={coast} bannertext={slogan} />
 }
 
 export default Section

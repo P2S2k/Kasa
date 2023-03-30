@@ -14,14 +14,14 @@ root.render(
     <React.StrictMode>
         <Router>
             <div className="leaf">
-            <Header />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/Apropos" element={<Apropos />} />
-                <Route path="/Appart/:id" element={<Appart />} />
-                <Route path="*" element={<Error />} />
-            </Routes>
-            <Footer />
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Home />}></Route>
+                    <Route path="/Apropos" element={<Apropos />} />
+                    <Route path="/Appart/:id" element={<Appart />} />
+                    <Route path="*" element={<Error />} />
+                </Routes>
+                <Footer />
             </div>
         </Router>
     </React.StrictMode>

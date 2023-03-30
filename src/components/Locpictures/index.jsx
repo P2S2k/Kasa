@@ -12,12 +12,15 @@ function Locpictures({ appart }) {
     if (pics.length === 1) {
         return (
             <div className="pageappart">
+                <div className="counter">{count+1}/{pics.length}</div>
                 <div className="photostick">
                     <img className="images" src={pics[count]} alt="" />
                 </div>
             </div>
         )
     } else {
+        console.log (count)
+        console.log (pics.length)
         if (count === pics.length) {
             setCount(initialCount)
         }
@@ -27,6 +30,7 @@ function Locpictures({ appart }) {
         return (
             <div className="pageappart">
                 <div className="photostick">
+                    <div className="counter">{count+1}/{pics.length}</div>
                     <button
                         className="picright"
                         onClick={() => setCount((count) => count + 1)}

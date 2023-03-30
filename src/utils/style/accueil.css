@@ -3,24 +3,7 @@
     src: url("../fonts/Montserrat-Regular.otf");
 }
 /*****************************PC et LAPTOP************************/
-.section {
-    display: flex;
-    width: 100%;
-    height: 223px;
-    position: relative;
-    text-align: center;
-    background-color: black;
-    border-radius: 25px;
-    margin-bottom: 30px;
-    margin-top: 80px;
-}
-.section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
-    opacity: 60%;
-}
+
 .slogan {
     margin-top: 50px;
     position: absolute;
@@ -69,7 +52,7 @@ h1 {
     color: white;
 }
 .sticker-pic {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -77,11 +60,6 @@ h1 {
 
 /*************************************** TABLETTE ***************************************************/
 @media screen and (max-width: 1023px) {
-    .section {
-        height: 180px;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
     .slogan {
         width: fit-content;
         margin-top: 50px;
@@ -92,12 +70,12 @@ h1 {
         font-size: 36px;
     }
     /********************* BODY Sticker *********************/
-    
+
     .sticker-gallery {
         column-gap: 1%;
     }
     .sticker {
-        max-width: 45%;
+        width: 45%;
         min-width: 40%;
         height: 220px;
     }
@@ -107,11 +85,6 @@ h1 {
 }
 /*************************************MOBILE*********************************************/
 @media screen and (max-width: 599px) {
-    .section {
-        height: 100px;
-        margin-bottom: 0px;
-        margin-top: 10px;
-    }
     .slogan {
         height: 100%;
         margin-top: 20px;

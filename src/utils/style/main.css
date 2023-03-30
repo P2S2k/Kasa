@@ -68,6 +68,24 @@ body {
     margin-bottom: 5px;
     align-items: center;
 }
+.banner {
+    display: flex;
+    width: 100%;
+    height: 223px;
+    position: relative;
+    text-align: center;
+    background-color: black;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    opacity: 60%;
+}
 
 .footer {
     display: flex;
@@ -119,6 +137,11 @@ body {
     .navlink {
         font-size: 24px;
     }
+    .banner {
+        height: 180px;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
 
 }
 /*************************************Mobile phones*********************************************/
@@ -152,6 +175,11 @@ body {
 
     .navlink {
         font-size: 12px;
+    }
+    .banner {
+        height: 100px;
+        margin-bottom: 0px;
+        margin-top: 10px;
     }
 
     .footer {

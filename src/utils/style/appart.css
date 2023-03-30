@@ -53,6 +53,17 @@
 .picarrowright:hover {
     cursor: pointer;
 }
+.counter {
+    font-family: montserrat;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 50%;
+    transform: translateX(-200%);
+    margin-top: 400px;
+}
 /*****************   DETAILS SYNTHETIQUES   *****************/
 .details {
     display: flex;
@@ -185,9 +196,12 @@
     .picleft {
         left: 3%;
     }
-
+    .counter {
+        transform: translateX(-50%);
+        margin-top: 330px;
+    }
     /*****************   DETAILS SYNTHETIQUES   *****************/
-    
+
     .details {
         flex-direction: column;
     }
@@ -239,7 +253,7 @@
     }
 
     /*****************   DESCRIPTION & EQUIPEMENTS   *****************/
-    
+
     .descrequip {
         min-height: 150px;
         height: fit-content;
@@ -276,6 +290,9 @@
     .right {
         transform: translateX(0%);
         right: 3%;
+    }
+    .counter {
+        display: none;
     }
     /*****************   DETAILS SYNTHETIQUES   *****************/
     .details {

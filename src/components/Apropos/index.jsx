@@ -1,12 +1,14 @@
 import "../../utils/style/apropos.css"
-import Apropospic from "./image"
 import { Aprop } from "../../datas/Aprop"
 import Collapse from "../Collapse"
+import Banner from "../Banner"
+import mountain from "../../assets/mountain.png"
 
-function Propos(aprop) {
+
+function Propos() {
     return (
         <div>
-            <Apropospic />
+            <Banner bannerpic={mountain} />
             <div className="propos">
                 {Aprop.map((aprop) => (
                     <Collapse
